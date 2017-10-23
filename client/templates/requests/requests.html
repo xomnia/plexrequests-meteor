@@ -88,7 +88,8 @@
             <li><strong>Type:</strong> {{episodes}}</li>
             {{/if}}
             <li><strong>Release date:</strong> {{release_date}}</li>
-              <li>{{{approval_status}}}</li>
+              <li><strong>DVD date:</strong> {{dvd_release}}</li>
+			  <li>{{{approval_status}}}</li>
               <li><strong>Available:</strong> {{{download_status}}}</li>
               {{{requesting_user}}}
             <li><strong>Requested date:</strong> {{created_at}}</li>
@@ -105,7 +106,8 @@
                 <button class="btn btn-sm btn-danger-outline deny-item" data-toggle="model" data-target="#denyModel">Deny</button>
               {{/if}}
             </p>
-              <p><button class="btn btn-sm btn-danger-outline delete-item">Delete</button></p>
+              <p><button class="btn btn-sm btn-info-outline get-dates">Get Dates</button>
+			  <button class="btn btn-sm btn-danger-outline delete-item">Delete</button></p>
               <p><button class="btn btn-sm btn-info-outline clear-issues">Clear Issues</button></p>
             {{#if searchType 'Movies'}}
               {{#if available}}
